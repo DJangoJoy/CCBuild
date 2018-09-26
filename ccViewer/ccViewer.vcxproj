@@ -1,0 +1,833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2928AD3D-4317-358F-A675-799A97C0809D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ccViewer</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CCbuild\CCBuild\ccViewer\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ccViewer.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ccViewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CCbuild\CCBuild\ccViewer\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ccViewer.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ccViewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CCbuild\CCBuild\ccViewer\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ccViewer.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ccViewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CCbuild\CCBuild\ccViewer\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ccViewer.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ccViewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild\ccViewer;D:\CCbuild\CloudCompare-master\ccViewer;D:\CCbuild\CCBuild\ccViewer\ccViewer_autogen\include_Debug;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;D:\CCbuild\CloudCompare-master\libs\CCFbo\include;D:\CCbuild\CloudCompare-master\CC\include;D:\CCbuild\CloudCompare-master\libs\qCC_db;D:\CCbuild\CloudCompare-master\libs\qCC_db\msvc;D:\CCbuild\CloudCompare-master\libs\qCC_io;D:\CCbuild\CloudCompare-master\libs\qCC_glWindow;D:\CCbuild\CloudCompare-master\plugins;D:\CCbuild\CloudCompare-master\ccViewer\..\qCC;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CC_VIEWER;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CC_VIEWER;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild\ccViewer;D:\CCbuild\CloudCompare-master\ccViewer;D:\CCbuild\CCBuild\ccViewer\ccViewer_autogen\include_Debug;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;D:\CCbuild\CloudCompare-master\libs\CCFbo\include;D:\CCbuild\CloudCompare-master\CC\include;D:\CCbuild\CloudCompare-master\libs\qCC_db;D:\CCbuild\CloudCompare-master\libs\qCC_db\msvc;D:\CCbuild\CloudCompare-master\libs\qCC_io;D:\CCbuild\CloudCompare-master\libs\qCC_glWindow;D:\CCbuild\CloudCompare-master\plugins;D:\CCbuild\CloudCompare-master\ccViewer\..\qCC;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild\ccViewer;D:\CCbuild\CloudCompare-master\ccViewer;D:\CCbuild\CCBuild\ccViewer\ccViewer_autogen\include_Debug;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;D:\CCbuild\CloudCompare-master\libs\CCFbo\include;D:\CCbuild\CloudCompare-master\CC\include;D:\CCbuild\CloudCompare-master\libs\qCC_db;D:\CCbuild\CloudCompare-master\libs\qCC_db\msvc;D:\CCbuild\CloudCompare-master\libs\qCC_io;D:\CCbuild\CloudCompare-master\libs\qCC_glWindow;D:\CCbuild\CloudCompare-master\plugins;D:\CCbuild\CloudCompare-master\ccViewer\..\qCC;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target ccViewer</Message>
+      <Command>setlocal
+cd D:\CCbuild\CCBuild\ccViewer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMAKE\pro\bin\cmake.exe -E cmake_autogen D:/CCbuild/CCBuild/ccViewer/CMakeFiles/ccViewer_autogen.dir/AutogenInfo.cmake Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\libs\CCFbo\Debug\CC_FBO_LIBd.lib;..\libs\qCC_io\Debug\QCC_IO_LIBd.lib;..\libs\qCC_glWindow\Debug\QCC_GL_LIBd.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\qtmaind.lib;..\libs\qCC_db\Debug\QCC_DB_LIBd.lib;..\libs\CCFbo\Debug\CC_FBO_LIBd.lib;..\CC\Debug\CC_CORE_LIBd.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Concurrentd.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5OpenGLd.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5OpenGLExtensionsd.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Guid.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Cored.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\qtmaind.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/CCbuild/CCBuild/ccViewer/Debug/ccViewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/CCbuild/CCBuild/ccViewer/Debug/ccViewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild\ccViewer;D:\CCbuild\CloudCompare-master\ccViewer;D:\CCbuild\CCBuild\ccViewer\ccViewer_autogen\include_Release;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;D:\CCbuild\CloudCompare-master\libs\CCFbo\include;D:\CCbuild\CloudCompare-master\CC\include;D:\CCbuild\CloudCompare-master\libs\qCC_db;D:\CCbuild\CloudCompare-master\libs\qCC_db\msvc;D:\CCbuild\CloudCompare-master\libs\qCC_io;D:\CCbuild\CloudCompare-master\libs\qCC_glWindow;D:\CCbuild\CloudCompare-master\plugins;D:\CCbuild\CloudCompare-master\ccViewer\..\qCC;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SECURE_SCL=0;CC_VIEWER;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SECURE_SCL=0;CC_VIEWER;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild\ccViewer;D:\CCbuild\CloudCompare-master\ccViewer;D:\CCbuild\CCBuild\ccViewer\ccViewer_autogen\include_Release;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;D:\CCbuild\CloudCompare-master\libs\CCFbo\include;D:\CCbuild\CloudCompare-master\CC\include;D:\CCbuild\CloudCompare-master\libs\qCC_db;D:\CCbuild\CloudCompare-master\libs\qCC_db\msvc;D:\CCbuild\CloudCompare-master\libs\qCC_io;D:\CCbuild\CloudCompare-master\libs\qCC_glWindow;D:\CCbuild\CloudCompare-master\plugins;D:\CCbuild\CloudCompare-master\ccViewer\..\qCC;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild\ccViewer;D:\CCbuild\CloudCompare-master\ccViewer;D:\CCbuild\CCBuild\ccViewer\ccViewer_autogen\include_Release;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;D:\CCbuild\CloudCompare-master\libs\CCFbo\include;D:\CCbuild\CloudCompare-master\CC\include;D:\CCbuild\CloudCompare-master\libs\qCC_db;D:\CCbuild\CloudCompare-master\libs\qCC_db\msvc;D:\CCbuild\CloudCompare-master\libs\qCC_io;D:\CCbuild\CloudCompare-master\libs\qCC_glWindow;D:\CCbuild\CloudCompare-master\plugins;D:\CCbuild\CloudCompare-master\ccViewer\..\qCC;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target ccViewer</Message>
+      <Command>setlocal
+cd D:\CCbuild\CCBuild\ccViewer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMAKE\pro\bin\cmake.exe -E cmake_autogen D:/CCbuild/CCBuild/ccViewer/CMakeFiles/ccViewer_autogen.dir/AutogenInfo.cmake Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\libs\CCFbo\Release\CC_FBO_LIB.lib;..\libs\qCC_io\Release\QCC_IO_LIB.lib;..\libs\qCC_glWindow\Release\QCC_GL_LIB.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\qtmain.lib;..\libs\qCC_db\Release\QCC_DB_LIB.lib;..\libs\CCFbo\Release\CC_FBO_LIB.lib;..\CC\Release\CC_CORE_LIB.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Concurrent.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5OpenGL.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5OpenGLExtensions.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Core.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/CCbuild/CCBuild/ccViewer/Release/ccViewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/CCbuild/CCBuild/ccViewer/Release/ccViewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild\ccViewer;D:\CCbuild\CloudCompare-master\ccViewer;D:\CCbuild\CCBuild\ccViewer\ccViewer_autogen\include_MinSizeRel;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;D:\CCbuild\CloudCompare-master\libs\CCFbo\include;D:\CCbuild\CloudCompare-master\CC\include;D:\CCbuild\CloudCompare-master\libs\qCC_db;D:\CCbuild\CloudCompare-master\libs\qCC_db\msvc;D:\CCbuild\CloudCompare-master\libs\qCC_io;D:\CCbuild\CloudCompare-master\libs\qCC_glWindow;D:\CCbuild\CloudCompare-master\plugins;D:\CCbuild\CloudCompare-master\ccViewer\..\qCC;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CC_VIEWER;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CC_VIEWER;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild\ccViewer;D:\CCbuild\CloudCompare-master\ccViewer;D:\CCbuild\CCBuild\ccViewer\ccViewer_autogen\include_MinSizeRel;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;D:\CCbuild\CloudCompare-master\libs\CCFbo\include;D:\CCbuild\CloudCompare-master\CC\include;D:\CCbuild\CloudCompare-master\libs\qCC_db;D:\CCbuild\CloudCompare-master\libs\qCC_db\msvc;D:\CCbuild\CloudCompare-master\libs\qCC_io;D:\CCbuild\CloudCompare-master\libs\qCC_glWindow;D:\CCbuild\CloudCompare-master\plugins;D:\CCbuild\CloudCompare-master\ccViewer\..\qCC;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild\ccViewer;D:\CCbuild\CloudCompare-master\ccViewer;D:\CCbuild\CCBuild\ccViewer\ccViewer_autogen\include_MinSizeRel;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;D:\CCbuild\CloudCompare-master\libs\CCFbo\include;D:\CCbuild\CloudCompare-master\CC\include;D:\CCbuild\CloudCompare-master\libs\qCC_db;D:\CCbuild\CloudCompare-master\libs\qCC_db\msvc;D:\CCbuild\CloudCompare-master\libs\qCC_io;D:\CCbuild\CloudCompare-master\libs\qCC_glWindow;D:\CCbuild\CloudCompare-master\plugins;D:\CCbuild\CloudCompare-master\ccViewer\..\qCC;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target ccViewer</Message>
+      <Command>setlocal
+cd D:\CCbuild\CCBuild\ccViewer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMAKE\pro\bin\cmake.exe -E cmake_autogen D:/CCbuild/CCBuild/ccViewer/CMakeFiles/ccViewer_autogen.dir/AutogenInfo.cmake MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\libs\CCFbo\MinSizeRel\CC_FBO_LIB.lib;..\libs\qCC_io\MinSizeRel\QCC_IO_LIB.lib;..\libs\qCC_glWindow\MinSizeRel\QCC_GL_LIB.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\qtmain.lib;..\libs\qCC_db\MinSizeRel\QCC_DB_LIB.lib;..\libs\CCFbo\MinSizeRel\CC_FBO_LIB.lib;..\CC\MinSizeRel\CC_CORE_LIB.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Concurrent.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5OpenGL.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5OpenGLExtensions.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Core.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/CCbuild/CCBuild/ccViewer/MinSizeRel/ccViewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/CCbuild/CCBuild/ccViewer/MinSizeRel/ccViewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild\ccViewer;D:\CCbuild\CloudCompare-master\ccViewer;D:\CCbuild\CCBuild\ccViewer\ccViewer_autogen\include_RelWithDebInfo;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;D:\CCbuild\CloudCompare-master\libs\CCFbo\include;D:\CCbuild\CloudCompare-master\CC\include;D:\CCbuild\CloudCompare-master\libs\qCC_db;D:\CCbuild\CloudCompare-master\libs\qCC_db\msvc;D:\CCbuild\CloudCompare-master\libs\qCC_io;D:\CCbuild\CloudCompare-master\libs\qCC_glWindow;D:\CCbuild\CloudCompare-master\plugins;D:\CCbuild\CloudCompare-master\ccViewer\..\qCC;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CC_VIEWER;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CC_VIEWER;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild\ccViewer;D:\CCbuild\CloudCompare-master\ccViewer;D:\CCbuild\CCBuild\ccViewer\ccViewer_autogen\include_RelWithDebInfo;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;D:\CCbuild\CloudCompare-master\libs\CCFbo\include;D:\CCbuild\CloudCompare-master\CC\include;D:\CCbuild\CloudCompare-master\libs\qCC_db;D:\CCbuild\CloudCompare-master\libs\qCC_db\msvc;D:\CCbuild\CloudCompare-master\libs\qCC_io;D:\CCbuild\CloudCompare-master\libs\qCC_glWindow;D:\CCbuild\CloudCompare-master\plugins;D:\CCbuild\CloudCompare-master\ccViewer\..\qCC;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild\ccViewer;D:\CCbuild\CloudCompare-master\ccViewer;D:\CCbuild\CCBuild\ccViewer\ccViewer_autogen\include_RelWithDebInfo;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;D:\CCbuild\CloudCompare-master\libs\CCFbo\include;D:\CCbuild\CloudCompare-master\CC\include;D:\CCbuild\CloudCompare-master\libs\qCC_db;D:\CCbuild\CloudCompare-master\libs\qCC_db\msvc;D:\CCbuild\CloudCompare-master\libs\qCC_io;D:\CCbuild\CloudCompare-master\libs\qCC_glWindow;D:\CCbuild\CloudCompare-master\plugins;D:\CCbuild\CloudCompare-master\ccViewer\..\qCC;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target ccViewer</Message>
+      <Command>setlocal
+cd D:\CCbuild\CCBuild\ccViewer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMAKE\pro\bin\cmake.exe -E cmake_autogen D:/CCbuild/CCBuild/ccViewer/CMakeFiles/ccViewer_autogen.dir/AutogenInfo.cmake RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\libs\CCFbo\RelWithDebInfo\CC_FBO_LIB.lib;..\libs\qCC_io\RelWithDebInfo\QCC_IO_LIB.lib;..\libs\qCC_glWindow\RelWithDebInfo\QCC_GL_LIB.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\qtmain.lib;..\libs\qCC_db\RelWithDebInfo\QCC_DB_LIB.lib;..\libs\CCFbo\RelWithDebInfo\CC_FBO_LIB.lib;..\CC\RelWithDebInfo\CC_CORE_LIB.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Concurrent.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5OpenGL.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5OpenGLExtensions.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\Qt5Core.lib;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/CCbuild/CCBuild/ccViewer/RelWithDebInfo/ccViewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/CCbuild/CCBuild/ccViewer/RelWithDebInfo/ccViewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\CCbuild\CloudCompare-master\ccViewer\ui_templates\ccviewer.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_ccviewer.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_ccviewer.h D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewer.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewer.ui;D:\CCbuild\CloudCompare-master\ccViewer\ui_templates\ccviewer.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CCbuild\CCBuild\ccViewer\ui_ccviewer.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_ccviewer.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_ccviewer.h D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewer.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewer.ui;D:\CCbuild\CloudCompare-master\ccViewer\ui_templates\ccviewer.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CCbuild\CCBuild\ccViewer\ui_ccviewer.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_ccviewer.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_ccviewer.h D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewer.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewer.ui;D:\CCbuild\CloudCompare-master\ccViewer\ui_templates\ccviewer.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CCbuild\CCBuild\ccViewer\ui_ccviewer.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_ccviewer.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_ccviewer.h D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewer.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewer.ui;D:\CCbuild\CloudCompare-master\ccViewer\ui_templates\ccviewer.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CCbuild\CCBuild\ccViewer\ui_ccviewer.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\CCbuild\CloudCompare-master\ccViewer\ui_templates\ccviewerAbout.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_ccviewerAbout.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_ccviewerAbout.h D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewerAbout.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewerAbout.ui;D:\CCbuild\CloudCompare-master\ccViewer\ui_templates\ccviewerAbout.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CCbuild\CCBuild\ccViewer\ui_ccviewerAbout.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_ccviewerAbout.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_ccviewerAbout.h D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewerAbout.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewerAbout.ui;D:\CCbuild\CloudCompare-master\ccViewer\ui_templates\ccviewerAbout.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CCbuild\CCBuild\ccViewer\ui_ccviewerAbout.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_ccviewerAbout.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_ccviewerAbout.h D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewerAbout.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewerAbout.ui;D:\CCbuild\CloudCompare-master\ccViewer\ui_templates\ccviewerAbout.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CCbuild\CCBuild\ccViewer\ui_ccviewerAbout.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_ccviewerAbout.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_ccviewerAbout.h D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewerAbout.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/CCbuild/CloudCompare-master/ccViewer/ui_templates/ccviewerAbout.ui;D:\CCbuild\CloudCompare-master\ccViewer\ui_templates\ccviewerAbout.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CCbuild\CCBuild\ccViewer\ui_ccviewerAbout.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\CCbuild\CloudCompare-master\qCC\ui_templates\cameraParamDlg.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_cameraParamDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_cameraParamDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/cameraParamDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/cameraParamDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\cameraParamDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CCbuild\CCBuild\ccViewer\ui_cameraParamDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_cameraParamDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_cameraParamDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/cameraParamDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/cameraParamDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\cameraParamDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CCbuild\CCBuild\ccViewer\ui_cameraParamDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_cameraParamDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_cameraParamDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/cameraParamDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/cameraParamDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\cameraParamDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CCbuild\CCBuild\ccViewer\ui_cameraParamDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_cameraParamDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_cameraParamDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/cameraParamDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/cameraParamDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\cameraParamDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CCbuild\CCBuild\ccViewer\ui_cameraParamDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\CCbuild\CloudCompare-master\qCC\ui_templates\displayOptionsDlg.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_displayOptionsDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_displayOptionsDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/displayOptionsDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/displayOptionsDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\displayOptionsDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CCbuild\CCBuild\ccViewer\ui_displayOptionsDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_displayOptionsDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_displayOptionsDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/displayOptionsDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/displayOptionsDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\displayOptionsDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CCbuild\CCBuild\ccViewer\ui_displayOptionsDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_displayOptionsDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_displayOptionsDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/displayOptionsDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/displayOptionsDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\displayOptionsDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CCbuild\CCBuild\ccViewer\ui_displayOptionsDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_displayOptionsDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_displayOptionsDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/displayOptionsDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/displayOptionsDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\displayOptionsDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CCbuild\CCBuild\ccViewer\ui_displayOptionsDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\CCbuild\CloudCompare-master\qCC\ui_templates\pickOneElementDlg.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_pickOneElementDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_pickOneElementDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/pickOneElementDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/pickOneElementDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\pickOneElementDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CCbuild\CCBuild\ccViewer\ui_pickOneElementDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_pickOneElementDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_pickOneElementDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/pickOneElementDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/pickOneElementDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\pickOneElementDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CCbuild\CCBuild\ccViewer\ui_pickOneElementDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_pickOneElementDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_pickOneElementDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/pickOneElementDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/pickOneElementDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\pickOneElementDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CCbuild\CCBuild\ccViewer\ui_pickOneElementDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_pickOneElementDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_pickOneElementDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/pickOneElementDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/pickOneElementDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\pickOneElementDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CCbuild\CCBuild\ccViewer\ui_pickOneElementDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\CCbuild\CloudCompare-master\qCC\ui_templates\stereoModeDlg.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_stereoModeDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_stereoModeDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/stereoModeDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/stereoModeDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\stereoModeDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CCbuild\CCBuild\ccViewer\ui_stereoModeDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_stereoModeDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_stereoModeDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/stereoModeDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/stereoModeDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\stereoModeDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CCbuild\CCBuild\ccViewer\ui_stereoModeDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_stereoModeDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_stereoModeDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/stereoModeDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/stereoModeDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\stereoModeDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CCbuild\CCBuild\ccViewer\ui_stereoModeDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_stereoModeDlg.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\uic.exe -o D:/CCbuild/CCBuild/ccViewer/ui_stereoModeDlg.h D:/CCbuild/CloudCompare-master/qCC/ui_templates/stereoModeDlg.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/CCbuild/CloudCompare-master/qCC/ui_templates/stereoModeDlg.ui;D:\CCbuild\CloudCompare-master\qCC\ui_templates\stereoModeDlg.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CCbuild\CCBuild\ccViewer\ui_stereoModeDlg.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\CCbuild\CloudCompare-master\qCC\icones.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating qrc_icones.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\rcc.exe --name icones --output D:/CCbuild/CCBuild/ccViewer/qrc_icones.cpp D:/CCbuild/CloudCompare-master/qCC/icones.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/CCbuild/CloudCompare-master/qCC/icones.qrc;D:\CCbuild\CloudCompare-master\qCC\images\donate.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPickCenterAuto.png;D:\CCbuild\CloudCompare-master\qCC\images\theme\snowman.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-closed.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-end.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-more.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-open.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\vline.png;D:\CCbuild\CloudCompare-master\qCC\images\gamepad.png;D:\CCbuild\CloudCompare-master\qCC\images\restore.png;D:\CCbuild\CloudCompare-master\qCC\images\square.png;D:\CCbuild\CloudCompare-master\qCC\images\interactors.png;D:\CCbuild\CloudCompare-master\qCC\images\oculus.png;D:\CCbuild\CloudCompare-master\qCC\images\nvidia.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSwapUpDown.png;D:\CCbuild\CloudCompare-master\qCC\images\unfoldSmall.png;D:\CCbuild\CloudCompare-master\qCC\images\ccStereo.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSORFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\smallCSVFile.png;D:\CCbuild\CloudCompare-master\qCC\images\smallSphere.png;D:\CCbuild\CloudCompare-master\qCC\images\ccLevel.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGrid.png;D:\CCbuild\CloudCompare-master\qCC\images\sectionExtraction.png;D:\CCbuild\CloudCompare-master\qCC\images\orthoSections.png;D:\CCbuild\CloudCompare-master\qCC\images\ccExit.png;D:\CCbuild\CloudCompare-master\qCC\images\ccFullScreen.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSunLight.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClippingBox.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClippingBoxMultExport.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClippingBoxSingleExport.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGear.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCenteredPerspective32.png;D:\CCbuild\CloudCompare-master\qCC\images\ccOrthoMode32.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewerBasedPerspective32.png;D:\CCbuild\CloudCompare-master\qCC\images\dbAreaLabelSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbViewportSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbHObjectSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbHObjectSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbImageSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCalibratedImageSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbContainerSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbContainerSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMaterialSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbLabelSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCloudSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCloudSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbLockSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbSubMeshSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbSubMeshSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMeshSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMeshSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMiscGeomSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMiscGeomSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbOctreeSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbOctreeSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbPolylineSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPivotAuto.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPivotOff.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPivotOn.png;D:\CCbuild\CloudCompare-master\qCC\images\dbGBLSensorSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCamSensorSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\smallTrash.png;D:\CCbuild\CloudCompare-master\qCC\images\smallRectangleSelect.png;D:\CCbuild\CloudCompare-master\qCC\images\im3DxLogo.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPolygonSelect.png;D:\CCbuild\CloudCompare-master\qCC\images\smallCancel.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPause.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPointDistance.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPointProperties.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPointsAngle.png;D:\CCbuild\CloudCompare-master\qCC\images\smallReset.png;D:\CCbuild\CloudCompare-master\qCC\images\smallSegmentIn.png;D:\CCbuild\CloudCompare-master\qCC\images\smallSegmentOut.png;D:\CCbuild\CloudCompare-master\qCC\images\smallValidate.png;D:\CCbuild\CloudCompare-master\qCC\images\smallBasket.png;D:\CCbuild\CloudCompare-master\qCC\images\smallRevert.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPointListPicking.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPointPicking.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSfArithmetic.png;D:\CCbuild\CloudCompare-master\qCC\images\ccAddConstSF.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPickCenter.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewXneg.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewXpos.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewYneg.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewYpos.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewZneg.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewZpos.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCCExtract.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClone.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCloudCloudDistance.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCloudMeshDistance.png;D:\CCbuild\CloudCompare-master\qCC\images\ccComputeStat.png;D:\CCbuild\CloudCompare-master\qCC\images\ccDeleteSF.png;D:\CCbuild\CloudCompare-master\qCC\images\ccFilterByValue.png;D:\CCbuild\CloudCompare-master\qCC\images\ccMerge.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGaussianFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGlobalZoom.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGradient.png;D:\CCbuild\CloudCompare-master\qCC\images\ccHistogram.png;D:\CCbuild\CloudCompare-master\qCC\images\ccInteractiveTransformation.png;D:\CCbuild\CloudCompare-master\qCC\images\ccAlign.png;D:\CCbuild\CloudCompare-master\qCC\images\ccRegister.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSampleCloud.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSamplePoints.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSegment.png;D:\CCbuild\CloudCompare-master\qCC\images\ccStatTest.png;D:\CCbuild\CloudCompare-master\qCC\images\ccConsole.png;D:\CCbuild\CloudCompare-master\qCC\images\ccOpen.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPointSize.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSave.png;D:\CCbuild\CloudCompare-master\qCC\images\ccDelete.png;D:\CCbuild\CloudCompare-master\qCC\images\ccZoomIn.png;D:\CCbuild\CloudCompare-master\qCC\images\ccBilateralFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\ccUnstack.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPencil.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPlus.png;D:\CCbuild\CloudCompare-master\qCC\images\ccMinus.png;D:\CCbuild\CloudCompare-master\qCC\images\ccLightParams.png;D:\CCbuild\CloudCompare-master\qCC\images\imLogoV2Qt.png;D:\CCbuild\CloudCompare-master\qCC\images\primBox.gif;D:\CCbuild\CloudCompare-master\qCC\images\primPlane.gif;D:\CCbuild\CloudCompare-master\qCC\images\primCone.gif;D:\CCbuild\CloudCompare-master\qCC\images\primCylinder.gif;D:\CCbuild\CloudCompare-master\qCC\images\ccViewIso1.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewIso2.png;D:\CCbuild\CloudCompare-master\qCC\images\primDish.gif;D:\CCbuild\CloudCompare-master\qCC\images\primSphere.gif;D:\CCbuild\CloudCompare-master\qCC\images\primTorus.gif;D:\CCbuild\CloudCompare-master\qCC\images\typePositiveSF.png;D:\CCbuild\CloudCompare-master\qCC\images\typeGrayColor.png;D:\CCbuild\CloudCompare-master\qCC\images\typeNormal.png;D:\CCbuild\CloudCompare-master\qCC\images\typeRgbCcolor.png;D:\CCbuild\CloudCompare-master\qCC\images\typeSF.png;D:\CCbuild\CloudCompare-master\qCC\images\typeXCoordinate.png;D:\CCbuild\CloudCompare-master\qCC\images\typeYCoordinate.png;D:\CCbuild\CloudCompare-master\qCC\images\typeZCoordinate.png;D:\CCbuild\CloudCompare-master\qCC\images\ccTracePolyline.png;D:\CCbuild\CloudCompare-master\qCC\images\qCompass.png;D:\CCbuild\CloudCompare-master\qCC\images\mapIcon.png;D:\CCbuild\CloudCompare-master\qCC\images\noFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\monitor.svg;D:\CCbuild\CloudCompare-master\qCC\images\photo-camera.svg;D:\CCbuild\CloudCompare-master\qCC\images\search.svg;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_viewer_icon_16.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_viewer_icon_32.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_viewer_icon_64.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_icon_16.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_icon_32.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_icon_64.png;D:\CCbuild\CloudCompare-master\qCC\icones.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CCbuild\CCBuild\ccViewer\qrc_icones.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating qrc_icones.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\rcc.exe --name icones --output D:/CCbuild/CCBuild/ccViewer/qrc_icones.cpp D:/CCbuild/CloudCompare-master/qCC/icones.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/CCbuild/CloudCompare-master/qCC/icones.qrc;D:\CCbuild\CloudCompare-master\qCC\images\donate.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPickCenterAuto.png;D:\CCbuild\CloudCompare-master\qCC\images\theme\snowman.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-closed.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-end.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-more.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-open.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\vline.png;D:\CCbuild\CloudCompare-master\qCC\images\gamepad.png;D:\CCbuild\CloudCompare-master\qCC\images\restore.png;D:\CCbuild\CloudCompare-master\qCC\images\square.png;D:\CCbuild\CloudCompare-master\qCC\images\interactors.png;D:\CCbuild\CloudCompare-master\qCC\images\oculus.png;D:\CCbuild\CloudCompare-master\qCC\images\nvidia.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSwapUpDown.png;D:\CCbuild\CloudCompare-master\qCC\images\unfoldSmall.png;D:\CCbuild\CloudCompare-master\qCC\images\ccStereo.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSORFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\smallCSVFile.png;D:\CCbuild\CloudCompare-master\qCC\images\smallSphere.png;D:\CCbuild\CloudCompare-master\qCC\images\ccLevel.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGrid.png;D:\CCbuild\CloudCompare-master\qCC\images\sectionExtraction.png;D:\CCbuild\CloudCompare-master\qCC\images\orthoSections.png;D:\CCbuild\CloudCompare-master\qCC\images\ccExit.png;D:\CCbuild\CloudCompare-master\qCC\images\ccFullScreen.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSunLight.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClippingBox.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClippingBoxMultExport.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClippingBoxSingleExport.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGear.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCenteredPerspective32.png;D:\CCbuild\CloudCompare-master\qCC\images\ccOrthoMode32.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewerBasedPerspective32.png;D:\CCbuild\CloudCompare-master\qCC\images\dbAreaLabelSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbViewportSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbHObjectSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbHObjectSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbImageSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCalibratedImageSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbContainerSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbContainerSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMaterialSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbLabelSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCloudSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCloudSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbLockSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbSubMeshSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbSubMeshSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMeshSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMeshSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMiscGeomSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMiscGeomSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbOctreeSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbOctreeSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbPolylineSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPivotAuto.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPivotOff.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPivotOn.png;D:\CCbuild\CloudCompare-master\qCC\images\dbGBLSensorSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCamSensorSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\smallTrash.png;D:\CCbuild\CloudCompare-master\qCC\images\smallRectangleSelect.png;D:\CCbuild\CloudCompare-master\qCC\images\im3DxLogo.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPolygonSelect.png;D:\CCbuild\CloudCompare-master\qCC\images\smallCancel.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPause.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPointDistance.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPointProperties.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPointsAngle.png;D:\CCbuild\CloudCompare-master\qCC\images\smallReset.png;D:\CCbuild\CloudCompare-master\qCC\images\smallSegmentIn.png;D:\CCbuild\CloudCompare-master\qCC\images\smallSegmentOut.png;D:\CCbuild\CloudCompare-master\qCC\images\smallValidate.png;D:\CCbuild\CloudCompare-master\qCC\images\smallBasket.png;D:\CCbuild\CloudCompare-master\qCC\images\smallRevert.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPointListPicking.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPointPicking.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSfArithmetic.png;D:\CCbuild\CloudCompare-master\qCC\images\ccAddConstSF.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPickCenter.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewXneg.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewXpos.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewYneg.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewYpos.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewZneg.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewZpos.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCCExtract.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClone.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCloudCloudDistance.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCloudMeshDistance.png;D:\CCbuild\CloudCompare-master\qCC\images\ccComputeStat.png;D:\CCbuild\CloudCompare-master\qCC\images\ccDeleteSF.png;D:\CCbuild\CloudCompare-master\qCC\images\ccFilterByValue.png;D:\CCbuild\CloudCompare-master\qCC\images\ccMerge.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGaussianFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGlobalZoom.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGradient.png;D:\CCbuild\CloudCompare-master\qCC\images\ccHistogram.png;D:\CCbuild\CloudCompare-master\qCC\images\ccInteractiveTransformation.png;D:\CCbuild\CloudCompare-master\qCC\images\ccAlign.png;D:\CCbuild\CloudCompare-master\qCC\images\ccRegister.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSampleCloud.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSamplePoints.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSegment.png;D:\CCbuild\CloudCompare-master\qCC\images\ccStatTest.png;D:\CCbuild\CloudCompare-master\qCC\images\ccConsole.png;D:\CCbuild\CloudCompare-master\qCC\images\ccOpen.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPointSize.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSave.png;D:\CCbuild\CloudCompare-master\qCC\images\ccDelete.png;D:\CCbuild\CloudCompare-master\qCC\images\ccZoomIn.png;D:\CCbuild\CloudCompare-master\qCC\images\ccBilateralFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\ccUnstack.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPencil.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPlus.png;D:\CCbuild\CloudCompare-master\qCC\images\ccMinus.png;D:\CCbuild\CloudCompare-master\qCC\images\ccLightParams.png;D:\CCbuild\CloudCompare-master\qCC\images\imLogoV2Qt.png;D:\CCbuild\CloudCompare-master\qCC\images\primBox.gif;D:\CCbuild\CloudCompare-master\qCC\images\primPlane.gif;D:\CCbuild\CloudCompare-master\qCC\images\primCone.gif;D:\CCbuild\CloudCompare-master\qCC\images\primCylinder.gif;D:\CCbuild\CloudCompare-master\qCC\images\ccViewIso1.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewIso2.png;D:\CCbuild\CloudCompare-master\qCC\images\primDish.gif;D:\CCbuild\CloudCompare-master\qCC\images\primSphere.gif;D:\CCbuild\CloudCompare-master\qCC\images\primTorus.gif;D:\CCbuild\CloudCompare-master\qCC\images\typePositiveSF.png;D:\CCbuild\CloudCompare-master\qCC\images\typeGrayColor.png;D:\CCbuild\CloudCompare-master\qCC\images\typeNormal.png;D:\CCbuild\CloudCompare-master\qCC\images\typeRgbCcolor.png;D:\CCbuild\CloudCompare-master\qCC\images\typeSF.png;D:\CCbuild\CloudCompare-master\qCC\images\typeXCoordinate.png;D:\CCbuild\CloudCompare-master\qCC\images\typeYCoordinate.png;D:\CCbuild\CloudCompare-master\qCC\images\typeZCoordinate.png;D:\CCbuild\CloudCompare-master\qCC\images\ccTracePolyline.png;D:\CCbuild\CloudCompare-master\qCC\images\qCompass.png;D:\CCbuild\CloudCompare-master\qCC\images\mapIcon.png;D:\CCbuild\CloudCompare-master\qCC\images\noFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\monitor.svg;D:\CCbuild\CloudCompare-master\qCC\images\photo-camera.svg;D:\CCbuild\CloudCompare-master\qCC\images\search.svg;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_viewer_icon_16.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_viewer_icon_32.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_viewer_icon_64.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_icon_16.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_icon_32.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_icon_64.png;D:\CCbuild\CloudCompare-master\qCC\icones.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CCbuild\CCBuild\ccViewer\qrc_icones.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating qrc_icones.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\rcc.exe --name icones --output D:/CCbuild/CCBuild/ccViewer/qrc_icones.cpp D:/CCbuild/CloudCompare-master/qCC/icones.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/CCbuild/CloudCompare-master/qCC/icones.qrc;D:\CCbuild\CloudCompare-master\qCC\images\donate.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPickCenterAuto.png;D:\CCbuild\CloudCompare-master\qCC\images\theme\snowman.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-closed.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-end.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-more.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-open.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\vline.png;D:\CCbuild\CloudCompare-master\qCC\images\gamepad.png;D:\CCbuild\CloudCompare-master\qCC\images\restore.png;D:\CCbuild\CloudCompare-master\qCC\images\square.png;D:\CCbuild\CloudCompare-master\qCC\images\interactors.png;D:\CCbuild\CloudCompare-master\qCC\images\oculus.png;D:\CCbuild\CloudCompare-master\qCC\images\nvidia.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSwapUpDown.png;D:\CCbuild\CloudCompare-master\qCC\images\unfoldSmall.png;D:\CCbuild\CloudCompare-master\qCC\images\ccStereo.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSORFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\smallCSVFile.png;D:\CCbuild\CloudCompare-master\qCC\images\smallSphere.png;D:\CCbuild\CloudCompare-master\qCC\images\ccLevel.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGrid.png;D:\CCbuild\CloudCompare-master\qCC\images\sectionExtraction.png;D:\CCbuild\CloudCompare-master\qCC\images\orthoSections.png;D:\CCbuild\CloudCompare-master\qCC\images\ccExit.png;D:\CCbuild\CloudCompare-master\qCC\images\ccFullScreen.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSunLight.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClippingBox.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClippingBoxMultExport.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClippingBoxSingleExport.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGear.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCenteredPerspective32.png;D:\CCbuild\CloudCompare-master\qCC\images\ccOrthoMode32.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewerBasedPerspective32.png;D:\CCbuild\CloudCompare-master\qCC\images\dbAreaLabelSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbViewportSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbHObjectSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbHObjectSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbImageSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCalibratedImageSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbContainerSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbContainerSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMaterialSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbLabelSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCloudSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCloudSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbLockSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbSubMeshSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbSubMeshSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMeshSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMeshSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMiscGeomSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMiscGeomSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbOctreeSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbOctreeSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbPolylineSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPivotAuto.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPivotOff.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPivotOn.png;D:\CCbuild\CloudCompare-master\qCC\images\dbGBLSensorSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCamSensorSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\smallTrash.png;D:\CCbuild\CloudCompare-master\qCC\images\smallRectangleSelect.png;D:\CCbuild\CloudCompare-master\qCC\images\im3DxLogo.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPolygonSelect.png;D:\CCbuild\CloudCompare-master\qCC\images\smallCancel.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPause.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPointDistance.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPointProperties.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPointsAngle.png;D:\CCbuild\CloudCompare-master\qCC\images\smallReset.png;D:\CCbuild\CloudCompare-master\qCC\images\smallSegmentIn.png;D:\CCbuild\CloudCompare-master\qCC\images\smallSegmentOut.png;D:\CCbuild\CloudCompare-master\qCC\images\smallValidate.png;D:\CCbuild\CloudCompare-master\qCC\images\smallBasket.png;D:\CCbuild\CloudCompare-master\qCC\images\smallRevert.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPointListPicking.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPointPicking.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSfArithmetic.png;D:\CCbuild\CloudCompare-master\qCC\images\ccAddConstSF.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPickCenter.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewXneg.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewXpos.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewYneg.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewYpos.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewZneg.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewZpos.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCCExtract.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClone.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCloudCloudDistance.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCloudMeshDistance.png;D:\CCbuild\CloudCompare-master\qCC\images\ccComputeStat.png;D:\CCbuild\CloudCompare-master\qCC\images\ccDeleteSF.png;D:\CCbuild\CloudCompare-master\qCC\images\ccFilterByValue.png;D:\CCbuild\CloudCompare-master\qCC\images\ccMerge.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGaussianFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGlobalZoom.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGradient.png;D:\CCbuild\CloudCompare-master\qCC\images\ccHistogram.png;D:\CCbuild\CloudCompare-master\qCC\images\ccInteractiveTransformation.png;D:\CCbuild\CloudCompare-master\qCC\images\ccAlign.png;D:\CCbuild\CloudCompare-master\qCC\images\ccRegister.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSampleCloud.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSamplePoints.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSegment.png;D:\CCbuild\CloudCompare-master\qCC\images\ccStatTest.png;D:\CCbuild\CloudCompare-master\qCC\images\ccConsole.png;D:\CCbuild\CloudCompare-master\qCC\images\ccOpen.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPointSize.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSave.png;D:\CCbuild\CloudCompare-master\qCC\images\ccDelete.png;D:\CCbuild\CloudCompare-master\qCC\images\ccZoomIn.png;D:\CCbuild\CloudCompare-master\qCC\images\ccBilateralFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\ccUnstack.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPencil.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPlus.png;D:\CCbuild\CloudCompare-master\qCC\images\ccMinus.png;D:\CCbuild\CloudCompare-master\qCC\images\ccLightParams.png;D:\CCbuild\CloudCompare-master\qCC\images\imLogoV2Qt.png;D:\CCbuild\CloudCompare-master\qCC\images\primBox.gif;D:\CCbuild\CloudCompare-master\qCC\images\primPlane.gif;D:\CCbuild\CloudCompare-master\qCC\images\primCone.gif;D:\CCbuild\CloudCompare-master\qCC\images\primCylinder.gif;D:\CCbuild\CloudCompare-master\qCC\images\ccViewIso1.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewIso2.png;D:\CCbuild\CloudCompare-master\qCC\images\primDish.gif;D:\CCbuild\CloudCompare-master\qCC\images\primSphere.gif;D:\CCbuild\CloudCompare-master\qCC\images\primTorus.gif;D:\CCbuild\CloudCompare-master\qCC\images\typePositiveSF.png;D:\CCbuild\CloudCompare-master\qCC\images\typeGrayColor.png;D:\CCbuild\CloudCompare-master\qCC\images\typeNormal.png;D:\CCbuild\CloudCompare-master\qCC\images\typeRgbCcolor.png;D:\CCbuild\CloudCompare-master\qCC\images\typeSF.png;D:\CCbuild\CloudCompare-master\qCC\images\typeXCoordinate.png;D:\CCbuild\CloudCompare-master\qCC\images\typeYCoordinate.png;D:\CCbuild\CloudCompare-master\qCC\images\typeZCoordinate.png;D:\CCbuild\CloudCompare-master\qCC\images\ccTracePolyline.png;D:\CCbuild\CloudCompare-master\qCC\images\qCompass.png;D:\CCbuild\CloudCompare-master\qCC\images\mapIcon.png;D:\CCbuild\CloudCompare-master\qCC\images\noFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\monitor.svg;D:\CCbuild\CloudCompare-master\qCC\images\photo-camera.svg;D:\CCbuild\CloudCompare-master\qCC\images\search.svg;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_viewer_icon_16.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_viewer_icon_32.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_viewer_icon_64.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_icon_16.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_icon_32.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_icon_64.png;D:\CCbuild\CloudCompare-master\qCC\icones.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CCbuild\CCBuild\ccViewer\qrc_icones.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating qrc_icones.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\bin\rcc.exe --name icones --output D:/CCbuild/CCBuild/ccViewer/qrc_icones.cpp D:/CCbuild/CloudCompare-master/qCC/icones.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/CCbuild/CloudCompare-master/qCC/icones.qrc;D:\CCbuild\CloudCompare-master\qCC\images\donate.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPickCenterAuto.png;D:\CCbuild\CloudCompare-master\qCC\images\theme\snowman.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-closed.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-end.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-more.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\branch-open.png;D:\CCbuild\CloudCompare-master\qCC\images\QTreeView\vline.png;D:\CCbuild\CloudCompare-master\qCC\images\gamepad.png;D:\CCbuild\CloudCompare-master\qCC\images\restore.png;D:\CCbuild\CloudCompare-master\qCC\images\square.png;D:\CCbuild\CloudCompare-master\qCC\images\interactors.png;D:\CCbuild\CloudCompare-master\qCC\images\oculus.png;D:\CCbuild\CloudCompare-master\qCC\images\nvidia.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSwapUpDown.png;D:\CCbuild\CloudCompare-master\qCC\images\unfoldSmall.png;D:\CCbuild\CloudCompare-master\qCC\images\ccStereo.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSORFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\smallCSVFile.png;D:\CCbuild\CloudCompare-master\qCC\images\smallSphere.png;D:\CCbuild\CloudCompare-master\qCC\images\ccLevel.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGrid.png;D:\CCbuild\CloudCompare-master\qCC\images\sectionExtraction.png;D:\CCbuild\CloudCompare-master\qCC\images\orthoSections.png;D:\CCbuild\CloudCompare-master\qCC\images\ccExit.png;D:\CCbuild\CloudCompare-master\qCC\images\ccFullScreen.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSunLight.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClippingBox.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClippingBoxMultExport.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClippingBoxSingleExport.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGear.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCenteredPerspective32.png;D:\CCbuild\CloudCompare-master\qCC\images\ccOrthoMode32.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewerBasedPerspective32.png;D:\CCbuild\CloudCompare-master\qCC\images\dbAreaLabelSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbViewportSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbHObjectSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbHObjectSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbImageSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCalibratedImageSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbContainerSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbContainerSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMaterialSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbLabelSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCloudSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCloudSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbLockSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbSubMeshSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbSubMeshSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMeshSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMeshSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMiscGeomSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbMiscGeomSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbOctreeSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbOctreeSymbolLocked.png;D:\CCbuild\CloudCompare-master\qCC\images\dbPolylineSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPivotAuto.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPivotOff.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPivotOn.png;D:\CCbuild\CloudCompare-master\qCC\images\dbGBLSensorSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\dbCamSensorSymbol.png;D:\CCbuild\CloudCompare-master\qCC\images\smallTrash.png;D:\CCbuild\CloudCompare-master\qCC\images\smallRectangleSelect.png;D:\CCbuild\CloudCompare-master\qCC\images\im3DxLogo.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPolygonSelect.png;D:\CCbuild\CloudCompare-master\qCC\images\smallCancel.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPause.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPointDistance.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPointProperties.png;D:\CCbuild\CloudCompare-master\qCC\images\smallPointsAngle.png;D:\CCbuild\CloudCompare-master\qCC\images\smallReset.png;D:\CCbuild\CloudCompare-master\qCC\images\smallSegmentIn.png;D:\CCbuild\CloudCompare-master\qCC\images\smallSegmentOut.png;D:\CCbuild\CloudCompare-master\qCC\images\smallValidate.png;D:\CCbuild\CloudCompare-master\qCC\images\smallBasket.png;D:\CCbuild\CloudCompare-master\qCC\images\smallRevert.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPointListPicking.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPointPicking.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSfArithmetic.png;D:\CCbuild\CloudCompare-master\qCC\images\ccAddConstSF.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPickCenter.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewXneg.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewXpos.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewYneg.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewYpos.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewZneg.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewZpos.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCCExtract.png;D:\CCbuild\CloudCompare-master\qCC\images\ccClone.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCloudCloudDistance.png;D:\CCbuild\CloudCompare-master\qCC\images\ccCloudMeshDistance.png;D:\CCbuild\CloudCompare-master\qCC\images\ccComputeStat.png;D:\CCbuild\CloudCompare-master\qCC\images\ccDeleteSF.png;D:\CCbuild\CloudCompare-master\qCC\images\ccFilterByValue.png;D:\CCbuild\CloudCompare-master\qCC\images\ccMerge.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGaussianFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGlobalZoom.png;D:\CCbuild\CloudCompare-master\qCC\images\ccGradient.png;D:\CCbuild\CloudCompare-master\qCC\images\ccHistogram.png;D:\CCbuild\CloudCompare-master\qCC\images\ccInteractiveTransformation.png;D:\CCbuild\CloudCompare-master\qCC\images\ccAlign.png;D:\CCbuild\CloudCompare-master\qCC\images\ccRegister.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSampleCloud.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSamplePoints.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSegment.png;D:\CCbuild\CloudCompare-master\qCC\images\ccStatTest.png;D:\CCbuild\CloudCompare-master\qCC\images\ccConsole.png;D:\CCbuild\CloudCompare-master\qCC\images\ccOpen.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPointSize.png;D:\CCbuild\CloudCompare-master\qCC\images\ccSave.png;D:\CCbuild\CloudCompare-master\qCC\images\ccDelete.png;D:\CCbuild\CloudCompare-master\qCC\images\ccZoomIn.png;D:\CCbuild\CloudCompare-master\qCC\images\ccBilateralFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\ccUnstack.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPencil.png;D:\CCbuild\CloudCompare-master\qCC\images\ccPlus.png;D:\CCbuild\CloudCompare-master\qCC\images\ccMinus.png;D:\CCbuild\CloudCompare-master\qCC\images\ccLightParams.png;D:\CCbuild\CloudCompare-master\qCC\images\imLogoV2Qt.png;D:\CCbuild\CloudCompare-master\qCC\images\primBox.gif;D:\CCbuild\CloudCompare-master\qCC\images\primPlane.gif;D:\CCbuild\CloudCompare-master\qCC\images\primCone.gif;D:\CCbuild\CloudCompare-master\qCC\images\primCylinder.gif;D:\CCbuild\CloudCompare-master\qCC\images\ccViewIso1.png;D:\CCbuild\CloudCompare-master\qCC\images\ccViewIso2.png;D:\CCbuild\CloudCompare-master\qCC\images\primDish.gif;D:\CCbuild\CloudCompare-master\qCC\images\primSphere.gif;D:\CCbuild\CloudCompare-master\qCC\images\primTorus.gif;D:\CCbuild\CloudCompare-master\qCC\images\typePositiveSF.png;D:\CCbuild\CloudCompare-master\qCC\images\typeGrayColor.png;D:\CCbuild\CloudCompare-master\qCC\images\typeNormal.png;D:\CCbuild\CloudCompare-master\qCC\images\typeRgbCcolor.png;D:\CCbuild\CloudCompare-master\qCC\images\typeSF.png;D:\CCbuild\CloudCompare-master\qCC\images\typeXCoordinate.png;D:\CCbuild\CloudCompare-master\qCC\images\typeYCoordinate.png;D:\CCbuild\CloudCompare-master\qCC\images\typeZCoordinate.png;D:\CCbuild\CloudCompare-master\qCC\images\ccTracePolyline.png;D:\CCbuild\CloudCompare-master\qCC\images\qCompass.png;D:\CCbuild\CloudCompare-master\qCC\images\mapIcon.png;D:\CCbuild\CloudCompare-master\qCC\images\noFilter.png;D:\CCbuild\CloudCompare-master\qCC\images\monitor.svg;D:\CCbuild\CloudCompare-master\qCC\images\photo-camera.svg;D:\CCbuild\CloudCompare-master\qCC\images\search.svg;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_viewer_icon_16.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_viewer_icon_32.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_viewer_icon_64.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_icon_16.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_icon_32.png;D:\CCbuild\CloudCompare-master\qCC\images\icon\cc_icon_64.png;D:\CCbuild\CloudCompare-master\qCC\icones.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CCbuild\CCBuild\ccViewer\qrc_icones.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\CCbuild\CloudCompare-master\ccViewer\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/CCbuild/CloudCompare-master/ccViewer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMAKE\pro\bin\cmake.exe -HD:/CCbuild/CloudCompare-master -BD:/CCbuild/CCBuild --check-stamp-file D:/CCbuild/CCBuild/ccViewer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/CCbuild/CloudCompare-master/ccViewer/CMakeLists.txt;D:\CCbuild\CloudCompare-master\ccViewer\CMakeIncludeQCCFiles.cmake;D:\CCbuild\CloudCompare-master\ccViewer\CMakeLists.txt;D:\CCbuild\CloudCompare-master\qCC\icones.qrc;D:\CCbuild\CloudCompare-master\ccViewer\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CCbuild\CCBuild\ccViewer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/CCbuild/CloudCompare-master/ccViewer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMAKE\pro\bin\cmake.exe -HD:/CCbuild/CloudCompare-master -BD:/CCbuild/CCBuild --check-stamp-file D:/CCbuild/CCBuild/ccViewer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/CCbuild/CloudCompare-master/ccViewer/CMakeLists.txt;D:\CCbuild\CloudCompare-master\ccViewer\CMakeIncludeQCCFiles.cmake;D:\CCbuild\CloudCompare-master\ccViewer\CMakeLists.txt;D:\CCbuild\CloudCompare-master\qCC\icones.qrc;D:\CCbuild\CloudCompare-master\ccViewer\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CCbuild\CCBuild\ccViewer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/CCbuild/CloudCompare-master/ccViewer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMAKE\pro\bin\cmake.exe -HD:/CCbuild/CloudCompare-master -BD:/CCbuild/CCBuild --check-stamp-file D:/CCbuild/CCBuild/ccViewer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/CCbuild/CloudCompare-master/ccViewer/CMakeLists.txt;D:\CCbuild\CloudCompare-master\ccViewer\CMakeIncludeQCCFiles.cmake;D:\CCbuild\CloudCompare-master\ccViewer\CMakeLists.txt;D:\CCbuild\CloudCompare-master\qCC\icones.qrc;D:\CCbuild\CloudCompare-master\ccViewer\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CCbuild\CCBuild\ccViewer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/CCbuild/CloudCompare-master/ccViewer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMAKE\pro\bin\cmake.exe -HD:/CCbuild/CloudCompare-master -BD:/CCbuild/CCBuild --check-stamp-file D:/CCbuild/CCBuild/ccViewer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/CCbuild/CloudCompare-master/ccViewer/CMakeLists.txt;D:\CCbuild\CloudCompare-master\ccViewer\CMakeIncludeQCCFiles.cmake;D:\CCbuild\CloudCompare-master\ccViewer\CMakeLists.txt;D:\CCbuild\CloudCompare-master\qCC\icones.qrc;D:\CCbuild\CloudCompare-master\ccViewer\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CCbuild\CCBuild\ccViewer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\CCbuild\CloudCompare-master\ccViewer\ccViewerApplication.h" />
+    <ClInclude Include="D:\CCbuild\CloudCompare-master\ccViewer\ccviewer.h" />
+    <ClInclude Include="D:\CCbuild\CloudCompare-master\ccViewer\ccviewerlog.h" />
+    <ClInclude Include="D:\CCbuild\CloudCompare-master\qCC\ccCameraParamEditDlg.h" />
+    <ClInclude Include="D:\CCbuild\CloudCompare-master\qCC\ccDisplayOptionsDlg.h" />
+    <ClInclude Include="D:\CCbuild\CloudCompare-master\qCC\ccOptions.h" />
+    <ClInclude Include="D:\CCbuild\CloudCompare-master\qCC\ccOverlayDialog.h" />
+    <ClInclude Include="D:\CCbuild\CloudCompare-master\qCC\ccPickingHub.h" />
+    <ClInclude Include="D:\CCbuild\CloudCompare-master\qCC\ccPickOneElementDlg.h" />
+    <ClInclude Include="D:\CCbuild\CloudCompare-master\qCC\ccStereoModeDlg.h" />
+    <ClInclude Include="D:\CCbuild\CloudCompare-master\qCC\pluginManager\ccPluginManager.h" />
+    <ClCompile Include="D:\CCbuild\CloudCompare-master\ccViewer\ccViewerApplication.cpp" />
+    <ClCompile Include="D:\CCbuild\CloudCompare-master\ccViewer\ccviewer.cpp" />
+    <ClCompile Include="D:\CCbuild\CloudCompare-master\ccViewer\main.cpp" />
+    <ClCompile Include="D:\CCbuild\CloudCompare-master\qCC\ccCameraParamEditDlg.cpp" />
+    <ClCompile Include="D:\CCbuild\CloudCompare-master\qCC\ccDisplayOptionsDlg.cpp" />
+    <ClCompile Include="D:\CCbuild\CloudCompare-master\qCC\ccOptions.cpp" />
+    <ClCompile Include="D:\CCbuild\CloudCompare-master\qCC\ccOverlayDialog.cpp" />
+    <ClCompile Include="D:\CCbuild\CloudCompare-master\qCC\ccPickingHub.cpp" />
+    <ClCompile Include="D:\CCbuild\CloudCompare-master\qCC\ccPickOneElementDlg.cpp" />
+    <ClCompile Include="D:\CCbuild\CloudCompare-master\qCC\ccStereoModeDlg.cpp" />
+    <ClCompile Include="D:\CCbuild\CloudCompare-master\qCC\pluginManager\ccPluginManager.cpp" />
+    <ClInclude Include="D:\CCbuild\CCBuild\ccViewer\ui_ccviewer.h" />
+    <ClInclude Include="D:\CCbuild\CCBuild\ccViewer\ui_ccviewerAbout.h" />
+    <ClInclude Include="D:\CCbuild\CCBuild\ccViewer\ui_cameraParamDlg.h" />
+    <ClInclude Include="D:\CCbuild\CCBuild\ccViewer\ui_displayOptionsDlg.h" />
+    <ClInclude Include="D:\CCbuild\CCBuild\ccViewer\ui_pickOneElementDlg.h" />
+    <ClInclude Include="D:\CCbuild\CCBuild\ccViewer\ui_stereoModeDlg.h" />
+    <ClCompile Include="D:\CCbuild\CCBuild\ccViewer\qrc_icones.cpp" />
+    <ResourceCompile Include="D:\CCbuild\CloudCompare-master\ccViewer\images\icon\cc_viewer_icon.rc" />
+    <ClCompile Include="D:\CCbuild\CCBuild\ccViewer\ccViewer_autogen\mocs_compilation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\CCbuild\CCBuild\ZERO_CHECK.vcxproj">
+      <Project>{E8A6345E-9484-3787-93C1-1450CA434382}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\CCbuild\CCBuild\CC\CC_CORE_LIB.vcxproj">
+      <Project>{256CEE07-C490-3604-B652-1BEA60552D3B}</Project>
+      <Name>CC_CORE_LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\CCbuild\CCBuild\libs\CCFbo\CC_FBO_LIB.vcxproj">
+      <Project>{361D2454-98D7-3543-B1E6-C1C518640939}</Project>
+      <Name>CC_FBO_LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\CCbuild\CCBuild\libs\qCC_db\QCC_DB_LIB.vcxproj">
+      <Project>{2C9D779D-3E26-3C67-BCA5-1E2837B067A9}</Project>
+      <Name>QCC_DB_LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\CCbuild\CCBuild\libs\qCC_glWindow\QCC_GL_LIB.vcxproj">
+      <Project>{89CB79CD-C099-3041-B43F-FFAFB5198DA4}</Project>
+      <Name>QCC_GL_LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\CCbuild\CCBuild\libs\qCC_io\QCC_IO_LIB.vcxproj">
+      <Project>{97A9F81F-4DE9-310F-9C5F-C24E096BA902}</Project>
+      <Name>QCC_IO_LIB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

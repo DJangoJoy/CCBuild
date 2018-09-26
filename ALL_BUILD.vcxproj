@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8699DF30-A254-3671-808B-8BA0ECD811EA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild;D:\CCbuild\CloudCompare-master;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild;D:\CCbuild\CloudCompare-master;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild;D:\CCbuild\CloudCompare-master;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\CCbuild\CCBuild;D:\CCbuild\CloudCompare-master;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtConcurrent;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\include\QtPrintSupport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\CCbuild\CloudCompare-master\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/CCbuild/CloudCompare-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMAKE\pro\bin\cmake.exe -HD:/CCbuild/CloudCompare-master -BD:/CCbuild/CCBuild --check-stamp-file D:/CCbuild/CCBuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/CCbuild/CloudCompare-master/CMakeLists.txt;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGLExtensions\Qt5OpenGLExtensionsConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGLExtensions\Qt5OpenGLExtensionsConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupport_QWindowsPrinterSupportPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgIconPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeCCompiler.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeCXXCompiler.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeRCCompiler.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeSystem.cmake;D:\CCbuild\CloudCompare-master\CMakeLists.txt;D:\CCbuild\CloudCompare-master\cmake\CMakeExternalLibs.cmake;D:\CCbuild\CloudCompare-master\cmake\CMakeInclude.cmake;D:\CCbuild\CloudCompare-master\cmake\CMakePolicies.cmake;D:\CCbuild\CloudCompare-master\cmake\CMakeSetCompilerOptions.cmake;D:\CCbuild\CloudCompare-master\contrib\3DXSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\AllSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\DxfLibSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\E57Support.cmake;D:\CCbuild\CloudCompare-master\contrib\FBXSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\GDALSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\GamepadSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\OculusSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\PDALSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\ShapeLibSupport.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeParseArguments.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\FindOpenMP.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\CCbuild\CloudCompare-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CCbuild\CCBuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/CCbuild/CloudCompare-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMAKE\pro\bin\cmake.exe -HD:/CCbuild/CloudCompare-master -BD:/CCbuild/CCBuild --check-stamp-file D:/CCbuild/CCBuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/CCbuild/CloudCompare-master/CMakeLists.txt;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGLExtensions\Qt5OpenGLExtensionsConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGLExtensions\Qt5OpenGLExtensionsConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupport_QWindowsPrinterSupportPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgIconPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeCCompiler.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeCXXCompiler.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeRCCompiler.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeSystem.cmake;D:\CCbuild\CloudCompare-master\CMakeLists.txt;D:\CCbuild\CloudCompare-master\cmake\CMakeExternalLibs.cmake;D:\CCbuild\CloudCompare-master\cmake\CMakeInclude.cmake;D:\CCbuild\CloudCompare-master\cmake\CMakePolicies.cmake;D:\CCbuild\CloudCompare-master\cmake\CMakeSetCompilerOptions.cmake;D:\CCbuild\CloudCompare-master\contrib\3DXSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\AllSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\DxfLibSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\E57Support.cmake;D:\CCbuild\CloudCompare-master\contrib\FBXSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\GDALSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\GamepadSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\OculusSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\PDALSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\ShapeLibSupport.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeParseArguments.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\FindOpenMP.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\CCbuild\CloudCompare-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CCbuild\CCBuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/CCbuild/CloudCompare-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMAKE\pro\bin\cmake.exe -HD:/CCbuild/CloudCompare-master -BD:/CCbuild/CCBuild --check-stamp-file D:/CCbuild/CCBuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/CCbuild/CloudCompare-master/CMakeLists.txt;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGLExtensions\Qt5OpenGLExtensionsConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGLExtensions\Qt5OpenGLExtensionsConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupport_QWindowsPrinterSupportPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgIconPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeCCompiler.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeCXXCompiler.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeRCCompiler.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeSystem.cmake;D:\CCbuild\CloudCompare-master\CMakeLists.txt;D:\CCbuild\CloudCompare-master\cmake\CMakeExternalLibs.cmake;D:\CCbuild\CloudCompare-master\cmake\CMakeInclude.cmake;D:\CCbuild\CloudCompare-master\cmake\CMakePolicies.cmake;D:\CCbuild\CloudCompare-master\cmake\CMakeSetCompilerOptions.cmake;D:\CCbuild\CloudCompare-master\contrib\3DXSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\AllSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\DxfLibSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\E57Support.cmake;D:\CCbuild\CloudCompare-master\contrib\FBXSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\GDALSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\GamepadSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\OculusSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\PDALSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\ShapeLibSupport.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeParseArguments.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\FindOpenMP.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\CCbuild\CloudCompare-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CCbuild\CCBuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/CCbuild/CloudCompare-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMAKE\pro\bin\cmake.exe -HD:/CCbuild/CloudCompare-master -BD:/CCbuild/CCBuild --check-stamp-file D:/CCbuild/CCBuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/CCbuild/CloudCompare-master/CMakeLists.txt;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGLExtensions\Qt5OpenGLExtensionsConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5OpenGLExtensions\Qt5OpenGLExtensionsConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupport_QWindowsPrinterSupportPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgIconPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgPlugin.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.9.6\5.9.6\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeCCompiler.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeCXXCompiler.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeRCCompiler.cmake;D:\CCbuild\CCBuild\CMakeFiles\3.12.2\CMakeSystem.cmake;D:\CCbuild\CloudCompare-master\CMakeLists.txt;D:\CCbuild\CloudCompare-master\cmake\CMakeExternalLibs.cmake;D:\CCbuild\CloudCompare-master\cmake\CMakeInclude.cmake;D:\CCbuild\CloudCompare-master\cmake\CMakePolicies.cmake;D:\CCbuild\CloudCompare-master\cmake\CMakeSetCompilerOptions.cmake;D:\CCbuild\CloudCompare-master\contrib\3DXSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\AllSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\DxfLibSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\E57Support.cmake;D:\CCbuild\CloudCompare-master\contrib\FBXSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\GDALSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\GamepadSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\OculusSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\PDALSupport.cmake;D:\CCbuild\CloudCompare-master\contrib\ShapeLibSupport.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeParseArguments.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\FindOpenMP.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\CMAKE\pro\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\CCbuild\CloudCompare-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CCbuild\CCBuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\CCbuild\CCBuild\ZERO_CHECK.vcxproj">
+      <Project>{E8A6345E-9484-3787-93C1-1450CA434382}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\CCbuild\CCBuild\CC\CC_CORE_LIB.vcxproj">
+      <Project>{256CEE07-C490-3604-B652-1BEA60552D3B}</Project>
+      <Name>CC_CORE_LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\CCbuild\CCBuild\libs\CCFbo\CC_FBO_LIB.vcxproj">
+      <Project>{361D2454-98D7-3543-B1E6-C1C518640939}</Project>
+      <Name>CC_FBO_LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\CCbuild\CCBuild\qCC\CloudCompare.vcxproj">
+      <Project>{80FD2498-CB93-375F-85DF-26916457AC69}</Project>
+      <Name>CloudCompare</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\CCbuild\CCBuild\libs\qCC_db\QCC_DB_LIB.vcxproj">
+      <Project>{2C9D779D-3E26-3C67-BCA5-1E2837B067A9}</Project>
+      <Name>QCC_DB_LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\CCbuild\CCBuild\libs\qCC_glWindow\QCC_GL_LIB.vcxproj">
+      <Project>{89CB79CD-C099-3041-B43F-FFAFB5198DA4}</Project>
+      <Name>QCC_GL_LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\CCbuild\CCBuild\libs\qCC_io\QCC_IO_LIB.vcxproj">
+      <Project>{97A9F81F-4DE9-310F-9C5F-C24E096BA902}</Project>
+      <Name>QCC_IO_LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\CCbuild\CCBuild\ccViewer\ccViewer.vcxproj">
+      <Project>{2928AD3D-4317-358F-A675-799A97C0809D}</Project>
+      <Name>ccViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\CCbuild\CCBuild\libs\qcustomplot\qcustomplot.vcxproj">
+      <Project>{0B25FF5A-F694-37DE-BA45-A9E9A033BF22}</Project>
+      <Name>qcustomplot</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
